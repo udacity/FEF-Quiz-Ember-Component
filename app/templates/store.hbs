@@ -2,7 +2,7 @@
   <section class="row color-group {{item.color}}-bricks">
     <h2>{{item.color}}</h2>
     {{#each item.bricks as |brick|}}
-      {{lego-brick brick=brick}}
+      {{lego-brick brick=brick sale=item.onSale}}
     {{/each}}
   </section>
 {{/each}}
